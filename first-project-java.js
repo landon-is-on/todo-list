@@ -1,4 +1,10 @@
-let addtobutton = document.getElementById('addToDo');
+let addToDoButton = document.getElementById('addToDo');
 let toDoContainer = document.getElementById('toDoContainer');
-let inputfield = document.getElementById('inputfield');
+let inputField = document.getElementById('inputField');
 
+addToDoButton.addEventListener('click',function() {
+var paragraph = document.createElement('p')
+paragraph.classList.add('paragraph-styling');
+paragraph.innerText = inputField.value; 
+toDoContainer.appendChild(paragraph);
+})
